@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+
+.option img {
+  width: 4vh;
+  position: absolute;
+  top: 0;
+}
+
+#nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  pad: 0 150px;
+  gap: 50px;
+  position: fixed;
+  z-index: 99;
+  background-image: linear-gradient(#4800ff, #000000);
+}
+
+#nav img {
+  height: 75px;
+  padding: 10px;
+  margin: 1vw;
+}
+
+#nav h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: large;
+}
+
+#nav h4:hover {
+  background-color: #ffffff3d;
+  transition-duration: 500ms;
+}
+
+#main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.074);
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+}
+
+.para {
+  height: 80vh;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  gap: 2vw;
+  padding: 7%;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f200ff48;
+  
+}
+
+.para p {
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+}
+.para .paratext {
+  flex: 1;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.para .aboutme {
+  flex: 1;
+}
+.para .aboutme img {
+  border-radius: 50%;
+  width: 47%;
+}
+
+#page1 h1 {
+  font-size: 70px;
+  font-weight: 900;
+  position: relative;
+  margin: 4px;
+}
+
+#page1 p:hover {
+  background-color: #c300ff4f;
+  transform: scale(1.3);
+  transition-duration: 500ms;
+}
+
+#page1 h1::before {
+  content: "EAT. CODE. SLEEP. REPEAT.";
+  position: absolute;
+  color: hsl(0, 0%, 0%);
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+}
+
+.pg1text {
+  border-radius: 10px;
+}
+
+.pg1text:hover {
+  background-color: #bf00ff61;
+  transition-duration: 500ms;
+}
+
+#page1 h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#page1 p {
+  font-size: 25px;
+  font-weight: 500;
+  width: 40%;
+  margin: 4vh;
+  padding: 13px;
+  border-radius: 6px;
+}
+
+#page2 {
+  min-height: 130vh;
+  width: 100%;
+  z-index: 10;
+}
+
+#scroller {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+  background-color: #6200ff2a;
+  margin-top: 8vh;
+}
+
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+
+#scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+#scroller h4 {
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 900;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-right: 10px;
+  transition: all linear 0.5s;
+  color: transparent;
+  -webkit-text-stroke: 3px #b80cecde;
+}
+
+#scroller h4:hover {
+  color: #00ff1e;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#cards-container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 2vw;
+  height: 40vh;
+  width: 25vw;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.6s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+#card1 {
+  background-image: url(https://img.freepik.com/free-vector/frontend-development-concept-website-interface-design-improvement-web-page-programming-coding-testing-it-profession-isolated-flat-vector-illustration_613284-2357.jpg);
+}
+
+#card2 {
+  background-image: url(https://s3.studytonight.com/curious/uploads/pictures/1631204081-106730.png);
+}
+
+#card3 {
+  background-image: url(https://www.thinknexttraining.com/images/data-structues-and-algorithms-mob.jpg);
+}
+
+#card4 {
+  background-image: url(https://dfordivyansh.github.io/SYNC-Interns-Task-4/images/course-1.png);
+}
+
+#card5 {
+  background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1682433028937/94fa90a4-9add-4d67-baf8-3a746a4b5e26.jpeg);
+}
+
+#card6 {
+  background-image: url(https://thumbs.dreamstime.com/b/machine-deep-learning-algorithms-artificial-intelligence-ai-automation-modern-technology-business-as-concept-132739326.jpg);
+}
+
+.footer {
+  padding: 3vw;
+  background-image: linear-gradient(#4800ff, #000000);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-top: 20px solid #fff;
+  height: 30vh;
+}
+
+/* .typewriter h1,h2 {
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .10em solid rgb(255, 0, 230);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .10em;
+  animation: 
+    typing 3s steps(80, end),
+    blink-caret .8s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 0, 230) }
+} */
+
+@media (max-width: 600px) {
+
+  #cards-container {
+    flex-direction: column;
+    display: block;
+  }
+
+  .card {
+    width: 90vw;
+    margin: 80px auto;
+  }
+
+  #page1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 7vh;
+  }
+
+  #page2 {
+    height: 320vh;
+  }
+
+  .para {
+    flex-direction: column;
+    height: 110vh;
+    background-color: transparent;
+  }
+
+  .aboutme {
+    order: 1;
+  }
+
+  .aboutme img {
+    transform: scale(1.6);
+  }
+
+  .paratext {
+    order: 2;
+    background-color: #bf00ff61;
+    padding: 8px;
+  }
+
+  #nav {
+    background-image: linear-gradient(#4800ff, #000000);
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+  }
+
+  #nav h4 {
+    font-size: 12px;
+  }
+
+  #nav img {
+    width: 15vw;
+    height: 6.8vh;
+    padding: 5px;
+  }
+
+  #scroller {
+    height: 14vh;
+  }
+
+  .footer {
+    margin: 0;
+    padding: 17px;
+    height: 45vh;
+    border-top: 18px solid #ffffff;
+  }
+}
