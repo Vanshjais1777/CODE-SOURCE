@@ -288,7 +288,7 @@ video {
   50% { border-color: rgb(255, 0, 230) }
 } */
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
 
   #cards-container {
     flex-direction: column;
